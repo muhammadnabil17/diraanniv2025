@@ -11,7 +11,6 @@ function Picture() {
   const pictures = [
     { Image: picture1, title: 'January 4, 2025', description: "Why that face? 😭"},
 
-
   ]
   return (
     
