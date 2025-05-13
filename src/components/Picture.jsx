@@ -10,15 +10,13 @@ function Picture() {
   const navigate = useNavigate();
   
   const pictures = [
-  
-    {
-      image: picture1,
-      title: 'first time we took our picture together',
-      description: "'wkwkwk lucu banget foto yang pertama kali kita ambil, selalu aja bikin aku seneng liat fotonya'" 
-    }
+    { Image: picture1, title: 'January 4, 2025', description: "Why that face? 😭"},
+
   ]
   return (
+    
     <div className="min-h-screen bg-black/20 flex flex-col items-center justify-center">
+      
       <div className="w-[90%] max-w-[400px]">
         <h1 className="text-2xl sm:text-2xl font-bold -mb-4 drop-shadow-lg text-white text-center">
           {config.pictureTitle}
