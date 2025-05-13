@@ -10,8 +10,14 @@ const imageFiles = import.meta.glob('../assets/Picture*.png');
 
 function Picture() {
   const navigate = useNavigate();
-  const [pictures, setPictures] = useState([]);
-
+  const [pictures, setPictures] = [
+  
+    {
+      image: picture1,
+      title: 'first time we took our picture together',
+      description: "'wkwkwk lucu banget foto yang pertama kali kita ambil, selalu aja bikin aku seneng liat fotonya'" 
+    },    
+    
   useEffect(() => {
     const loadImages = async () => {
       const loadedImages = await Promise.all(
