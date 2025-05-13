@@ -10,6 +10,8 @@ function Picture() {
   
   const pictures = [
     { Image: picture1, title: 'January 4, 2025', description: "Why that face? 😭"},
+    { Image: picture2, title: 'January 4, 2024', description: "Ai huhuh 😂"},
+    { Image: picture3, title: 'January 4, 2024', description: "Ai huhuh 😂"},
 
   ]
   return (
