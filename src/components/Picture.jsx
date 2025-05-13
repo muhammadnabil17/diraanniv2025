@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'
 import { picture1, picture2, picture3, picture4, picture5, picture6, picture7, picture8 } from '../assets'
 import Carousel from './Carousel';
 import { ImageCard } from './ImageCard';
