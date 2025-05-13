@@ -6,7 +6,7 @@ const config = {
   */
 
   // 🔐 Passcode Page
-  correctPasscode: "0000", // Change this to any 4-digit code (the passcode for access)
+  correctPasscode: "1405", // Change this to any 4-digit code (the passcode for access)
   passcodeTitle: "Enter Passcode", // Title displayed on the passcode entry page
   successMessage: "Yayy!! :)", // Message shown upon successful passcode entry
   redirectMessage: "Redirecting...", // Message displayed while redirecting after success
@@ -17,14 +17,14 @@ const config = {
   searchPlaceholder: "Search Google or type a URL", // Placeholder text in the search input
   trendingTitle: "Trending searches", // Title for the trending searches section
   trendingSearches: [
-    "Why is my bf so cute?", // Example trending search query
+    "kenapa nabil embul", // Example trending search query
     "Why does Rheina love him more?", // Another example query
     `Rheina's birthdate (coz her bf forgets)`, // A personalized trending search
   ],
   proTip: 'Pro tip: try searching "How long have we been together?" ;)', // Helpful tip for users
 
   // ⏳ Timer Page
-  anniversaryDate: "2024-10-18", // 📅 Set your anniversary date here (used for the timer)
+  anniversaryDate: "2024-05-14", // 📅 Set your anniversary date here (used for the timer)
   timerTitle: "We've been together for:", // Title displayed on the timer page
   timerMessage: "... and still counting <3", // Message shown alongside the timer
   timeUnits: {
