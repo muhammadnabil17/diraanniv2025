@@ -10,7 +10,8 @@ const imageFiles = import.meta.glob('../assets/Picture*.png');
 
 function Picture() {
   const navigate = useNavigate();
-  const [pictures, setPictures] = [
+  
+  const pictures = [
   
     {
       image: picture1,
