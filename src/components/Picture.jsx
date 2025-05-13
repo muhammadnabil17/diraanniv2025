@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { picture1, picture2, picture3, picture4, picture5, picture6, picture7, picture8 } from '../assets'
 import Carousel from './Carousel';
 import { ImageCard } from './ImageCard';
 import { ArrowLeft } from './icons';
 import { useNavigate } from 'react-router-dom';
 import config from './config'; // Import config file
-
-// Dynamically import only the required picture images
-const imageFiles = import.meta.glob('../assets/Picture*.png');
 
 function Picture() {
   const navigate = useNavigate();
@@ -18,35 +16,7 @@ function Picture() {
       title: 'first time we took our picture together',
       description: "'wkwkwk lucu banget foto yang pertama kali kita ambil, selalu aja bikin aku seneng liat fotonya'" 
     }
-  [
-    
-  useEffect(() => {
-    const loadImages = async () => {
-      const loadedImages = await Promise.all(
-        Object.keys(imageFiles)
-          .sort((a, b) => {
-            // Extract the number from filenames (e.g., Picture1.png -> 1)
-            const aNum = parseInt(a.match(/Picture(\d+)\.png/)?.[1] || 0, 10);
-            const bNum = parseInt(b.match(/Picture(\d+)\.png/)?.[1] || 0, 10);
-            return aNum - bNum; // Ensure they are sorted correctly
-          })
-          .slice(0, config.pictureGallery.length) // Only take as many images as needed
-          .map(async (path, index) => {
-            const imageModule = await imageFiles[path]();
-            return {
-              Image: imageModule.default,
-              title: config.pictureGallery[index]?.title || 'No Title',
-              description: config.pictureGallery[index]?.description || 'No Description',
-            };
-          })
-      );
-
-      setPictures(loadedImages);
-    };
-
-    loadImages();
-  }, ]
-
+  ]
   return (
     <div className="min-h-screen bg-black/20 flex flex-col items-center justify-center">
       <div className="w-[90%] max-w-[400px]">
